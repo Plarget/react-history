@@ -1,0 +1,61 @@
+.visible-mobile {
+  @media (min-width: 1025px) {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @media (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.container {
+  --container-padding: 40px;
+  max-width: calc(1440px + var(--container-padding) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+
+  @media (max-width: 767px) {
+    --container-padding: 20px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67.2px;
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+.text {
+  color: var(--color-main);
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+
+  &--weigth {
+    font-weight: 700;
+  }
+}
+
+.label {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 25px;
+  color: var(--color-blue);
+
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}

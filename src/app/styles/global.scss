@@ -1,0 +1,27 @@
+body {
+  color: var(--color-main);
+  font-family: 'PTSans', sans-serif;
+  overflow-x: hidden;
+}
+
+html, body {
+  scrollbar-gutter: stable;
+}
+
+html, body, #root, .app {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: initial;
+}

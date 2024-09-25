@@ -1,0 +1,11 @@
+.historical-detail {
+  max-width: 320px;
+
+  @media (max-width: 480px) {
+    max-width: 166px;
+  }
+  &__year {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
